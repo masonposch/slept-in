@@ -1,0 +1,208 @@
+@import '_global';
+
+
+
+html, body {
+    x-overflow: none;
+}
+
+//Homepage
+ .homePageRender {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    letter-spacing: 1px;
+    .background-image {
+    	background-image: url(../assets/images/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: calc(50% - 0px) 50%;
+        background-attachment: fixed;
+        position: relative;
+        .background-text {
+        	width: 100%;
+    	    display: block;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            position: absolute;
+            transform: translate(-50%, -50%);
+    	    // margin: 0px auto;
+    	    // padding: 260px 0;
+        	h1 {
+    			color: $palegray;
+    			font-family: 'Roboto', sans-serif;
+                width: 100%;
+                text-transform: uppercase;
+                text-shadow: 0px 0px 25px #000;
+                &.name {
+                     font-style: italic;
+                     font-size: 150px;
+                     color: #000;
+                     font-weight: bold;
+                     text-shadow: none;
+                }
+    		}
+        }
+        a {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 150px;
+            color: $palegray;
+            background-color: transparent;
+            padding: 10px 30px;
+            border-style: none;
+            margin: 0 auto;
+            letter-spacing: 1px;
+            transition: 0.25s all;
+            &:hover {
+                background-color: $palegray;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        @include breakpoint(medium) {
+            height: 75%;
+
+        }
+        @include breakpoint(small) {
+            height: 50%;
+            .background-text {
+                h1 {
+                    font-size: 25px;
+                    &.name {
+                         font-size: 60px;
+                         color: $palegray;
+                    }
+                }
+            }
+            a {
+                width:100%;
+                text-align: center;
+            }
+        }
+    }
+
+    //Upcoming Shows
+
+    .upcoming-shows {
+        background: #fff;
+        padding: 75px 0;
+        table {
+            width: 750px;
+            margin: 0 auto;
+            text-align: center;
+            th, td {
+                width: 50%;
+                 text-align: center;
+            }
+        }
+        @include breakpoint(small) {
+            table {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    //FORM SECTION
+    .form-section {
+        background: #fff;
+        color: #159981;
+        text-align: center;
+        float: left;
+    }
+
+
+    //Footer
+    .footer {
+        background: $palegray;
+        height: 100px;
+        width: 100%;
+        float: left;
+        position: relative;
+        p, a {
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+        }
+        .contactSocial{
+            width: 100%;
+            .contactInfo {
+                text-align: left;
+                margin: 36px 0 0 0;
+                p {
+                    display: inline-block;
+                    margin: 0 15px 0 40px;
+                    font-size: 20px;
+                }
+                a {
+                    font-size: 20px;
+                }
+                @include breakpoint(small){
+                    text-align: center;
+                    margin: 25px 0 15px 0;
+                    p {
+                        margin: 0;
+                        display: block;
+                        margin: 0 0 15px;
+                    }
+                }
+            }
+            .social {
+                float: right;
+                margin: 33px 0 0 0;
+                a {
+                    margin: 0 50px 0 0;
+                    font-size: 20px;
+                    i {
+                        color: #000;
+                        font-size: 35px;
+                        transition: 0.25s all;
+                        &:hover {
+                            color: #666;
+                        }
+                    }
+                }
+                @include breakpoint(small){
+                    float: none;
+                    display: block;
+                    margin: 20px auto;
+                    width: 275px;
+                    a {
+                        margin: 0 25px 0 35px;
+                    }
+                }
+            }
+            @include breakpoint(small){
+                margin: 0 0 20px 0;
+            }
+        }
+        .copyright {
+            position: absolute;
+            bottom:29px;
+            margin: 0 0 0 40px;
+            font-size: 12px;
+            a {
+                color: #06327a;
+                transition: 0.25s all;
+                &:hover {
+                    color: #1bbc9b;
+                    text-decoration: none;
+                }
+            }
+            @include breakpoint(small){
+                text-align: center;
+                margin: 0;
+                bottom: 10px;
+                position: relative;
+            }
+        }
+    }
+
+
+
+}
