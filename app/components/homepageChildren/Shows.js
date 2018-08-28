@@ -8,10 +8,12 @@ class Shows extends React.Component{
 	constructor(){
 		super();
 		this.state = {
-			// show: {
-			// 	date: ,
-			// 	location:,
-			// },
+			show: [
+				{
+					dateTime: '9/6 - Midnight',
+					location: 'Dozen Street - Austin, TX',
+				},
+			]
 		}
 	}
 
@@ -20,20 +22,28 @@ class Shows extends React.Component{
 
 	render(){
 
-		
+		//Map through each project, so that they all display dynamically
+		var show = this.state.show.map(function(d) {
+			return(
+				//Individual key for each project being mapped
+				<tr key={d.location}>
+					<td>{d.dateTime}</td>
+					<td>{d.location}</td>
+				</tr>
+			);
+		}.bind(this));
 
 		return (
 				<div className="upcoming-shows">
-
+					<h2>Upcoming Shows</h2>
 					<table>
-						<tr>
-							<th>Date/Time</th>
-							<th>Location</th>
-						</tr>
-						<tr>
-							<td>9/6 - Midnight</td>
-							<td>Dozen Street - Austin, TX</td>
-						</tr>
+						<tbody>
+							<tr>
+								<th>Date/Time</th>
+								<th>Location</th>
+							</tr>
+							{show}
+						</tbody>
 					</table>
 
 				</div>

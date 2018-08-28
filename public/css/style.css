@@ -101,22 +101,91 @@ html, body {
   }
 }
 .homePageRender .upcoming-shows {
-  background: #fff;
+  background: #efefef;
   padding: 75px 0;
+  text-align: center;
+}
+.homePageRender .upcoming-shows h2 {
+  color: #1a1b1d;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 35px;
 }
 .homePageRender .upcoming-shows table {
   width: 750px;
-  margin: 0 auto;
+  margin: 50px auto 0;
   text-align: center;
 }
 .homePageRender .upcoming-shows table th, .homePageRender .upcoming-shows table td {
   width: 50%;
   text-align: center;
+  color: #666;
+  font-size: 18px;
 }
 @media only screen and (max-width: 767px) {
   .homePageRender .upcoming-shows table {
     width: 100%;
   }
+  .homePageRender .upcoming-shows table td {
+    font-size: 14px;
+  }
+}
+.homePageRender .photos {
+  background: #1a1b1d;
+  padding: 75px 100px;
+  text-align: center;
+}
+.homePageRender .photos h2 {
+  color: #efefef;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.homePageRender .photos .image {
+  width: 250px;
+  display: inline-block;
+  margin: 5px;
+}
+.homePageRender .photos .image img {
+  width: 100%;
+  transition: 0.25s;
+}
+.homePageRender .photos .image img:hover {
+  filter: saturate(0%);
+}
+@media only screen and (max-width: 767px) {
+  .homePageRender .photos .image {
+    width: 100%;
+    max-width: 250px;
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .homePageRender .photos .image {
+    margin: 5px 0;
+  }
+}
+.homePageRender .contact-us {
+  background: #efefef;
+  padding: 75px 0;
+  text-align: center;
+}
+.homePageRender .contact-us h2 {
+  color: #1a1b1d;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.homePageRender .contact-us p, .homePageRender .contact-us a {
+  font-size: 18px;
+}
+.homePageRender .contact-us p {
+  color: #666;
 }
 .homePageRender .form-section {
   background: #fff;
@@ -125,14 +194,15 @@ html, body {
   float: left;
 }
 .homePageRender .footer {
-  background: #efefef;
+  background: #1a1b1d;
+  border-top: 1px solid #efefef;
   height: 100px;
   width: 100%;
   float: left;
   position: relative;
 }
 .homePageRender .footer p, .homePageRender .footer a {
-  color: #000;
+  color: #efefef;
   font-family: "Roboto", sans-serif;
 }
 .homePageRender .footer .contactSocial {
@@ -170,7 +240,7 @@ html, body {
   font-size: 20px;
 }
 .homePageRender .footer .contactSocial .social a i {
-  color: #000;
+  color: #efefef;
   font-size: 35px;
   transition: 0.25s all;
 }
@@ -183,6 +253,7 @@ html, body {
     display: block;
     margin: 20px auto;
     width: 275px;
+    text-align: center;
   }
   .homePageRender .footer .contactSocial .social a {
     margin: 0 25px 0 35px;

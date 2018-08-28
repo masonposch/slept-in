@@ -18,7 +18,7 @@ class Hero extends React.Component{
 	}
 
 	imageBlur() {
-		var top = window.pageYOffset/7; 
+		var top = window.pageYOffset/12; 
 		this.setState({scrollPosition: top})
 	}
 
@@ -36,7 +36,7 @@ class Hero extends React.Component{
 					<div className="background-text text-center">
 						<h1 className={this.state.styleClass}>{this.state.greeting}</h1>
 					</div>
-					<a href="mailto:sleptintx@gmail.com">Contact us</a>
+					<a href="#contactUs">Contact us</a>
 				</div>
 		)
 	}

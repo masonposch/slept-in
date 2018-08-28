@@ -89,21 +89,99 @@ html, body {
     //Upcoming Shows
 
     .upcoming-shows {
-        background: #fff;
+        background: $palegray;
         padding: 75px 0;
+        text-align: center;
+        h2 {
+            color: #1a1b1d;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 35px;
+        }
         table {
             width: 750px;
-            margin: 0 auto;
+            margin: 50px auto 0;
             text-align: center;
             th, td {
-                width: 50%;
-                 text-align: center;
+               width: 50%;
+               text-align: center;
+               color: #666;
+               font-size: 18px;
             }
         }
         @include breakpoint(small) {
             table {
                 width: 100%;
+                td {
+                   font-size: 14px;
+                }
             }
+        }
+    }
+
+
+
+    //Upcoming Shows
+
+    .photos {
+        background: #1a1b1d;
+        padding: 75px 100px;
+        text-align: center;
+        h2 {
+            color: $palegray;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+        .image {
+            width: 250px;
+            display: inline-block;
+            margin: 5px;
+            img {
+                width: 100%;
+                transition:0.25s;
+                &:hover {
+                    filter: saturate(0%);
+                }
+            }
+        }
+        @include breakpoint(small) {
+            .image {
+                width: 100%;
+                max-width: 250px;
+                margin: 5px;
+            }
+        }
+         @include breakpoint(smallnarrow) {
+            .image {
+                margin: 5px 0;
+            }
+        }
+    }
+
+
+    //Contact Us
+
+    .contact-us {
+        background: $palegray;
+        padding: 75px 0;
+        text-align: center;
+        h2 {
+            color: #1a1b1d;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+        p, a {
+            font-size: 18px;
+        }
+        p {
+            color: #666;
         }
     }
 
@@ -120,13 +198,14 @@ html, body {
 
     //Footer
     .footer {
-        background: $palegray;
+        background: #1a1b1d;
+        border-top: 1px solid $palegray;
         height: 100px;
         width: 100%;
         float: left;
         position: relative;
         p, a {
-            color: #000;
+            color: $palegray;
             font-family: 'Roboto', sans-serif;
         }
         .contactSocial{
@@ -159,7 +238,7 @@ html, body {
                     margin: 0 50px 0 0;
                     font-size: 20px;
                     i {
-                        color: #000;
+                        color: $palegray;
                         font-size: 35px;
                         transition: 0.25s all;
                         &:hover {
@@ -172,6 +251,7 @@ html, body {
                     display: block;
                     margin: 20px auto;
                     width: 275px;
+                    text-align: center;
                     a {
                         margin: 0 25px 0 35px;
                     }
