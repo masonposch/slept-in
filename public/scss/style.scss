@@ -80,7 +80,7 @@ html, body {
                 }
             }
             a {
-                width:100%;
+                width:50%;
                 text-align: center;
             }
         }
@@ -126,7 +126,7 @@ html, body {
 
     .photos {
         background: #1a1b1d;
-        padding: 75px 100px;
+        padding: 75px 25%;
         text-align: center;
         h2 {
             color: $palegray;
@@ -140,9 +140,12 @@ html, body {
             width: 250px;
             display: inline-block;
             margin: 5px;
+            box-shadow: 0 0 5px #000;
+            border-radius: 2%;
             img {
                 width: 100%;
                 transition:0.25s;
+                border-radius: 2%;
                 &:hover {
                     filter: saturate(0%);
                 }

@@ -96,7 +96,7 @@ html, body {
     color: #efefef;
   }
   .homePageRender .background-image a {
-    width: 100%;
+    width: 50%;
     text-align: center;
   }
 }
@@ -133,7 +133,7 @@ html, body {
 }
 .homePageRender .photos {
   background: #1a1b1d;
-  padding: 75px 100px;
+  padding: 75px 25%;
   text-align: center;
 }
 .homePageRender .photos h2 {
@@ -148,10 +148,13 @@ html, body {
   width: 250px;
   display: inline-block;
   margin: 5px;
+  box-shadow: 0 0 5px #000;
+  border-radius: 2%;
 }
 .homePageRender .photos .image img {
   width: 100%;
   transition: 0.25s;
+  border-radius: 2%;
 }
 .homePageRender .photos .image img:hover {
   filter: saturate(0%);
