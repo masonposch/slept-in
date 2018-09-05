@@ -111,6 +111,7 @@ html, body {
             }
         }
         @include breakpoint(small) {
+            padding: 75px 15%;
             table {
                 width: 100%;
                 td {
@@ -153,8 +154,7 @@ html, body {
         }
         @include breakpoint(small) {
             .image {
-                width: 100%;
-                max-width: 250px;
+                max-width: 100%;
                 margin: 5px;
             }
         }
