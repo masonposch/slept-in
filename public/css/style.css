@@ -20,7 +20,6 @@ or wrap each row of columns in a @include row */
 /* You can also use a @include clear to clear columns */
 html, body {
   x-overflow: none;
-  overflow: none !important;
 }
 
 .homePageRender {
@@ -91,7 +90,7 @@ html, body {
 @media only screen and (max-width: 767px) {
   .homePageRender .background-image {
     height: 100%;
-    background-position: bottom !important;
+    background-attachment: scroll;
   }
   .homePageRender .background-image .background-text h1 {
     font-size: 25px;
