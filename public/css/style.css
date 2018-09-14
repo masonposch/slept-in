@@ -86,7 +86,7 @@ html, body {
 }
 @media only screen and (max-width: 767px) {
   .homePageRender .background-image {
-    height: 50%;
+    height: 100%;
   }
   .homePageRender .background-image .background-text h1 {
     font-size: 25px;

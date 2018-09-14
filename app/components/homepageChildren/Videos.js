@@ -26,7 +26,7 @@ class Videos extends React.Component{
 			return(
 				//Individual key for each project being mapped
 				<div className="video-wrapper">
-					<iframe width="560" height="315" src={"https://www.youtube.com/embed/" + d.id} frameBorder="0" allowFullScreen></iframe>
+					<iframe width="560" height="315" src={"https://www.youtube.com/embed/" + d.id + "?rel=0"} frameBorder="0" allowFullScreen ></iframe>
 				</div>
 			);
 		}.bind(this));
