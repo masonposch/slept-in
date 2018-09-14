@@ -90,6 +90,7 @@ html, body {
 @media only screen and (max-width: 767px) {
   .homePageRender .background-image {
     height: 100%;
+    background-position: bottom !important;
     background-attachment: scroll;
   }
   .homePageRender .background-image .background-text h1 {

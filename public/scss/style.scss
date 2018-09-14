@@ -73,6 +73,7 @@ html, body {
         }
         @include breakpoint(small) {
             height: 100%;
+            background-position: bottom !important;
             background-attachment: scroll;
             .background-text {
                 h1 {
