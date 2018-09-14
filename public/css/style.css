@@ -20,6 +20,7 @@ or wrap each row of columns in a @include row */
 /* You can also use a @include clear to clear columns */
 html, body {
   x-overflow: none;
+  overflow: none !important;
 }
 
 .homePageRender {
@@ -31,6 +32,9 @@ html, body {
 .homePageRender .background-image {
   background-image: url(../assets/images/hero.jpg);
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   background-position: calc(50% - 0px) 50%;
