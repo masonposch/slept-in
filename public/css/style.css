@@ -139,6 +139,36 @@ html, body {
     font-size: 14px;
   }
 }
+.homePageRender .music {
+  background: #1a1b1d;
+  padding: 75px 25%;
+  text-align: center;
+}
+.homePageRender .music h2 {
+  color: #efefef;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.homePageRender .music .album-wrapper img {
+  width: 350px;
+}
+.homePageRender .music .album-wrapper a p {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 25px;
+  font-style: italic;
+}
+.homePageRender .music .album-wrapper a.spotify-link {
+  color: #1db954;
+}
+@media only screen and (max-width: 767px) {
+  .homePageRender .music .album-wrapper img {
+    width: 100%;
+  }
+}
 .homePageRender .videos {
   background: #efefef;
   padding: 75px 0;
@@ -299,8 +329,8 @@ html, body {
   .homePageRender .footer .contactSocial .social {
     float: none;
     display: block;
-    margin: 20px auto;
-    width: 275px;
+    margin: 40px auto;
+    width: 100%;
     text-align: center;
   }
   .homePageRender .footer .contactSocial .social a {
@@ -332,6 +362,11 @@ html, body {
     margin: 0;
     bottom: 10px;
     position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .homePageRender .footer {
+    height: 160px;
   }
 }
 

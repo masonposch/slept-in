@@ -9,7 +9,10 @@ class Footer extends React.Component {
 
 		this.state = {
 			social: [
+				{ platform: "Spotify", logo: "fab fa-spotify", url: "https://open.spotify.com/artist/0RWEUOlzufNRn494QvfBiL?si=aYtlsgReQO6yIvkhspwK-g" },
+				{ platform: "Bandcamp", logo: "fab fa-bandcamp", url: "https://sleptin.bandcamp.com/releases" },
 				{ platform: "Instagram", logo: "fab fa-instagram", url: "https://www.instagram.com/slept.in.tx/" },
+				{ platform: "Twitter", logo: "fab fa-twitter", url: "https://www.twitter.com/sleptinband/" },
 			]
 		}
 	}
@@ -33,7 +36,7 @@ class Footer extends React.Component {
 					</div>
 				</div>
 				<div className="copyright">
-					<p>&copy; 2017 | <b>Slept In</b></p>
+					<p>&copy; 2018 | <b>Slept In</b></p>
 				</div>
 			</div>
 

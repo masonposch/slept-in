@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 import Hero from './homepageChildren/Hero'
 import Shows from './homepageChildren/Shows'
+import Music from './homepageChildren/Music'
 import Videos from './homepageChildren/Videos'
 import Photos from './homepageChildren/Photos'
 import Contact from './homepageChildren/Contact'
@@ -17,6 +18,8 @@ class Home extends React.Component{
 		return (
 			<div className="homePageRender">
 				<Hero />
+				<Shows />
+				<Music />
 				<Videos />
 				<Photos />
 				<Contact />

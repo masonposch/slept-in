@@ -10,8 +10,8 @@ class Shows extends React.Component{
 		this.state = {
 			show: [
 				{
-					dateTime: '9/6 - Midnight',
-					location: 'Dozen Street - Austin, TX',
+					dateTime: '11/21 - 8PM',
+					location: 'Spider House - Austin, TX',
 				},
 			]
 		}

@@ -128,6 +128,47 @@ html, body {
 
 
 
+    //Music
+
+    .music {
+        background: #1a1b1d;
+        padding: 75px 25%;
+        text-align: center;
+        h2 {
+            color: $palegray;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+        .album-wrapper {
+            img {
+                width: 350px;
+            }
+            a {
+                p {
+                    color: $palegray;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-style: italic;
+                }
+                &.spotify-link {
+                    color: #1db954;
+                }
+            }
+        } 
+        @include breakpoint(small) {
+            .album-wrapper {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+
     //Videos
 
     .videos {
@@ -300,8 +341,8 @@ html, body {
                 @include breakpoint(small){
                     float: none;
                     display: block;
-                    margin: 20px auto;
-                    width: 275px;
+                    margin: 40px auto;
+                    width: 100%;
                     text-align: center;
                     a {
                         margin: 0 25px 0 35px;
@@ -331,6 +372,9 @@ html, body {
                 bottom: 10px;
                 position: relative;
             }
+        }
+        @include breakpoint(small) {
+            height: 160px;
         }
     }
 
