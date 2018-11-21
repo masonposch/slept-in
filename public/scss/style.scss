@@ -108,19 +108,25 @@ html, body {
             width: 750px;
             margin: 50px auto 0;
             text-align: center;
-            th, td {
-               width: 50%;
-               text-align: center;
-               color: #666;
-               font-size: 18px;
+            tr {
+                height: 50px;
+                th, td {
+                   width: 50%;
+                   text-align: center;
+                   color: #666;
+                   font-size: 18px;
+                }
             }
         }
         @include breakpoint(small) {
             padding: 75px 15%;
             table {
                 width: 100%;
-                td {
-                   font-size: 14px;
+                tr {
+                    height: 60px;
+                    td {
+                       font-size: 14px;
+                    }
                 }
             }
         }

@@ -122,7 +122,10 @@ html, body {
   margin: 50px auto 0;
   text-align: center;
 }
-.homePageRender .upcoming-shows table th, .homePageRender .upcoming-shows table td {
+.homePageRender .upcoming-shows table tr {
+  height: 50px;
+}
+.homePageRender .upcoming-shows table tr th, .homePageRender .upcoming-shows table tr td {
   width: 50%;
   text-align: center;
   color: #666;
@@ -135,7 +138,10 @@ html, body {
   .homePageRender .upcoming-shows table {
     width: 100%;
   }
-  .homePageRender .upcoming-shows table td {
+  .homePageRender .upcoming-shows table tr {
+    height: 60px;
+  }
+  .homePageRender .upcoming-shows table tr td {
     font-size: 14px;
   }
 }
