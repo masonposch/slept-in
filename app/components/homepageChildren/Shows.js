@@ -9,21 +9,21 @@ class Shows extends React.Component{
 		super();
 		this.state = {
 			show: [
-				{
-					dateTime: '11/21 - 8PM',
-					location: 'Spider House - Austin, TX',
-					eventLink: 'https://www.facebook.com/events/193050148276673/'
-				},
-				{
-					dateTime: '11/23 - 8PM',
-					location: 'Kick Butt Coffee - Austin, TX',
-					eventLink: 'https://www.facebook.com/events/456923044834851/'
-				},
-				{
-					dateTime: '12/20 - 8PM',
-					location: 'Beerland - Austin, TX',
-					eventLink: 'https://www.facebook.com/events/328563361265283/'
-				},
+				// {
+				// 	dateTime: '11/21 - 8PM',
+				// 	location: 'Spider House - Austin, TX',
+				// 	eventLink: 'https://www.facebook.com/events/193050148276673/'
+				// },
+				// {
+				// 	dateTime: '11/23 - 8PM',
+				// 	location: 'Kick Butt Coffee - Austin, TX',
+				// 	eventLink: 'https://www.facebook.com/events/456923044834851/'
+				// },
+				// {
+				// 	dateTime: '12/20 - 8PM',
+				// 	location: 'Beerland - Austin, TX',
+				// 	eventLink: 'https://www.facebook.com/events/328563361265283/'
+				// },
 				{
 					dateTime: '01/22 - 7PM',
 					location: 'Come and Take It Live - Austin, TX',
