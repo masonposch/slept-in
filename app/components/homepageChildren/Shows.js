@@ -24,10 +24,15 @@ class Shows extends React.Component{
 				// 	location: 'Beerland - Austin, TX',
 				// 	eventLink: 'https://www.facebook.com/events/328563361265283/'
 				// },
+				// {
+				// 	dateTime: '01/22 - 7PM',
+				// 	location: 'Come and Take It Live - Austin, TX',
+				// 	eventLink: 'https://www.facebook.com/events/2420340787981683/'
+				// },
 				{
-					dateTime: '01/22 - 7PM',
-					location: 'Come and Take It Live - Austin, TX',
-					eventLink: 'https://www.facebook.com/events/2420340787981683/'
+					dateTime: '03/01 - 7PM',
+					location: 'Dirty Dog Bar - Austin, TX',
+					eventLink: 'https://www.eventbrite.com/e/calling-all-captains-tickets-54146663127?aff=SleptIn'
 				},
 			]
 		}
