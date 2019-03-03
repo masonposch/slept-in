@@ -18,7 +18,7 @@ class Home extends React.Component{
 		return (
 			<div className="homePageRender">
 				<Hero />
-				// <Shows />
+				
 				<Music />
 				<Videos />
 				<Photos />
