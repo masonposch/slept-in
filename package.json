@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/masonposch/react-portfolio#readme",
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.4.7",
     "body-parser": "^1.15.2",
